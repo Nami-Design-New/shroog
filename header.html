@@ -1,0 +1,63 @@
+<nav>
+    <!-- logo -->
+    <a class="logo" href="index.html#">
+        <img src="assets/img/logo.svg" />
+        <span>
+            <!-- عيادات  -->
+            شرووق
+        </span>
+    </a>
+    <!-- nav menu -->
+    <div class="navMenu">
+        <a class="navLink" href="index.html#"> الرئيسية </a>
+        <a class="navLink" href="index.html#aboutUs"> من نحن </a>
+        <a class="navLink" href="index.html#ourServices"> خدماتنا </a>
+        <a class="navLink" href="blog.html"> الاخبار </a>
+        <a class="navLink" href="gallery.html"> معرض الصور </a>
+        <a class="navLink" href="contact.html"> تواصل معنا </a>
+        <div class="dropdown">
+            <img class="icon me-1" src="assets/img/language.svg" alt="">
+            اللغة
+            <div class="dropdown-content">
+                <a href="#!" id="arabicLanguage" class="dropdownItem">
+                    <img src="assets/img/flag.svg" alt="">
+                    عربي
+                </a>
+                <a href="#!" id="englishLanguage" class="dropdownItem">
+                    <img src="assets/img/en_flag.svg" alt="">
+                    English
+                </a>
+            </div>
+        </div>
+        <a href="index.html#appointment" class="default-btn">
+            احجز موعد 
+            <span></span>
+        </a>
+
+    </div>
+    <!-- toggle btn -->
+    <div class="navBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(function () {
+        // nav menu
+        $(".navBtn").click(function () {
+            $(this).toggleClass("active");
+            $(".navMenu").toggleClass("active");
+        });
+        //navbar ainmation
+        $(window).scroll(function () {
+            var appScroll = $(document).scrollTop();
+            if (appScroll >= 1) {
+                $("header").addClass("headerAnimate");
+            } else {
+                $("header").removeClass("headerAnimate");
+            }
+        });
+    });
+</script>
