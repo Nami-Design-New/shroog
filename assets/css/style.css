@@ -1468,6 +1468,11 @@ Footer Area CSS
      object-fit: contain;
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  .footer-area .footer-widget .logo img {
+    height: 70px;
+  }
+}
 .footer-area .footer-widget.pl-50 {
   padding-right: 50px;
 }
@@ -1476,18 +1481,32 @@ Footer Area CSS
 Footer Bottom Area CSS
 =================================================*/
 .footer-bottom-area {
-  background-color: #3d4461;
+  background-color: #67a6ab;
 }
 .footer-bottom-area p {
-  text-align: center;
-  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 25px 0;
+  gap: 8px;
+  color: #ffffff;
+}
+.footer-bottom-area p .company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.footer-bottom-area p img {
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .footer-bottom-area p a {
-  color: #67a6ab;
+  color: #ffffff;
 }
 .footer-bottom-area p a:hover {
-  color: #ffffff;
+  color: #292323;
 }
 
 /*================================================

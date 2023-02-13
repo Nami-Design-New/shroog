@@ -1545,6 +1545,9 @@ Footer Area CSS
         width: fit-content;
         object-fit: contain;
         max-width: 100%;
+        @media (max-width:768px) {
+          height: 70px;
+        }
       }
     }
     &.pl-50 {
@@ -1557,17 +1560,32 @@ Footer Area CSS
 Footer Bottom Area CSS
 =================================================*/
 .footer-bottom-area {
-  background-color: #3d4461;
+  background-color: $main-color;
   p {
-    text-align: center;
-    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 25px 0;
+    gap: 8px;
+    color: $white-color;
+    .company {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    img {
+      height: 20px;
+      object-fit: contain;
+
+    }
     a {
-      color: $main-color;
+      color: $white-color;
       &:hover {
-        color: $white-color;
+        color: $heading-color;
       }
     }
+
   }
 }
 
