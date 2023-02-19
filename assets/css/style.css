@@ -1316,6 +1316,7 @@ Blog Area CSS
 .blog-card img {
   border-radius: 5px;
   height: 250px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
