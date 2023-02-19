@@ -747,6 +747,8 @@ About Area CSS
       position: relative;
       img {
         border-radius: 30px;
+        max-height: 375px;
+        object-fit: cover;
       }
       .shape-1 {
         position: absolute;
@@ -806,7 +808,7 @@ About Area CSS
 Appointment Area CSS
 =================================================*/
 .appointment-area {
-  overflow: hidden;
+  // overflow-x: hidden;
   .appointment-text {
     padding-left: 5px;
   }
@@ -821,6 +823,7 @@ Appointment Area CSS
         border-radius: 40px;
         height: 100%;
         object-fit: cover;
+        max-height: 500px;
       }
     }
     .img-two {
@@ -1388,6 +1391,8 @@ Blog Area CSS
   margin-bottom: 30px;
   img {
     border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
   }
   .b-card-text {
     padding: 30px 25px;
@@ -1408,6 +1413,8 @@ Blog Area CSS
     }
     h3 {
       line-height: 1.1;
+      height: 65px;
+      overflow: hidden;
       a {
         font-size: 20px;
         color: $heading-color;
